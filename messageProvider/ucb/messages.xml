@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<!-- 
+    {MTI} '0200' +
+	{bitmap} 'F638669128B0A00800000000044000A0' +
+	{Primary Account Number [2]} '20'+{{uuid[0].first[20]}} +
+	{Processing Code [3]} '0710000' +
+	{Amount, Transaction [4]} '000000000000' +
+	{Amount, Cardholder Billing [6]} '000000000000' +
+	{Transmission Date / Time [7]} '0114060332' +
+	{Systems Trace Audit Number [11]} '780801' +
+	{Local Transaction Time [12]} '080332' +
+	{Local Transaction Date [13]} '0114' +
+	{Merchant code [18]} '6011' +
+	{Acquiring Institution Country Code [19]} '736' +
+	{Point of Service Entry Mode [22]} '901' +
+	{Sequential number of the card [23]} '000' +
+	{Point of Service Condition Code [25]} '000' +
+	{Reconciliation Date [28]} '000000100' +
+	{Acquiring Institution Identification code [32]} '11'+'00000000017' +
+	{Track 2 Data [35]} '33'+'6046540900546571=2112521193990530' +
+	{Retrieval Reference Number [37]} {{uuid[0].last[12]}} +
+	{Card Acceptor Terminal Identification [41]} '09'+'byblosbnk' +
+	{Card Acceptor Name/Location [43]} 'Export Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         0000000000000000' +
+	{Additional Response Data2 [44]} '1 ' +
+	{Transaction currency Code [49]} '938' +
+	{Currency Code, Cardholder Billing [51]} '938' +
+	{Reserved Private [61]} 'CBSKBSDN      ' +
+	{Account Identification 1 [102]} '16'+'0011130029190001' +
+	{Multi Currency Data [106]} '0000000000000000000000000000006100000000000000' +
+	{Additional POS Data [121]} '001                                            ' +
+	{Miscellaneous Transaction Attributes [123]} '004'+'TC=2'
+
+	//-->
+	<message name="miniStatementNotWorking">A4M090000200F638669128B0A00800000000044000A020{{uuid[0].first[20]}}07100000000000000000000000000000114060332780801080332011460117369010000000000001001100000000017336046540900546571=2112521193990530{{uuid[0].last[12]}}09byblosbnkExport Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         00000000000000001 938938CBSKBSDN      1600111300291900010000000000000000000000000000006100000000000000001                                            004TC=2</message>
+	
+	<!-- {MTI} '0200' +
+{bitmap} 'F63866912CB0A00800000000044000A0' +
+{Primary Account Number [2]} '16'+'6046540900546571' +
+{Processing Code [3]} '0710000' +
+{Amount, Transaction [4]} '000000000000' +
+{Amount, Cardholder Billing [6]} '000000000000' +
+{Transmission Date / Time [7]} '0114060332' +
+{Systems Trace Audit Number [11]} '780801' +
+{Local Transaction Time [12]} '080332' +
+{Local Transaction Date [13]} '0114' +
+{Merchant code [18]} '6011' +
+{Acquiring Institution Country Code [19]} '736' +
+{Point of Service Entry Mode [22]} '901' +
+{Sequential number of the card [23]} '000' +
+{Point of Service Condition Code [25]} '000' +
+{Reconciliation Date [28]} '000000000' +
+{Acquiring Institution Identification code [32]} '11'+'00000000017' +
+{Track 2 Data [35]} '33'+'6046540900546571=2112521193990530' +
+{Retrieval Reference Number [37]} '000709785720' +
+{Authorization Identification Response [38]} '000079' +
+{Card Acceptor Terminal Identification [41]} '09'+'byblosbnk' +
+{Card Acceptor Name/Location [43]} 'Export Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         0000000000000000' +
+{Additional Response Data2 [44]} '1 ' +
+{Transaction currency Code [49]} '938' +
+{Currency Code, Cardholder Billing [51]} '938' +
+{Reserved Private [61]} 'CBSKBSDN      ' +
+{Account Identification 1 [102]} '18'+'000011130029190001' +
+{Multi Currency Data [106]} '0000000000000000000000000000006100000000000000' +
+{Additional POS Data [121]} '001                                            ' +
+{Miscellaneous Transaction Attributes [123]} '004'+'TC=2'//-->
+	
+	<message name="miniStatement">A4M090000200F63866912CB0A00800000000044000A020{{uuid[0].first[20]}}07100000000000000000000000000000114060332780801080332011460117369010000000000000001100000000017336046540900546571=2112521193990530{{uuid[0].last[12]}}00007909byblosbnkExport Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         00000000000000001 938938CBSKBSDN      180000111300291900010000000000000000000000000000006100000000000000001                                            004TC=2</message>
+	
+	
+	
+	
+	<message name="OtherAtmMinistatementMsg">A4M090000200F638669128B0A00800000000044000A016604654090054657107100000000000000000000000000000114060332780801080332011460117369010000000000000001100000000017336046540900546571=211252119399053000070978572009byblosbnkExport Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         00000000000000001 938938CBSKBSDN      1600111300291900010000000000000000000000000000006100000000000000001                                            004TC=2</message>
+	<message name="UcbAtmWithdrawalMsg">A4M090000200F638669128B0A00800000000044000A016604654090046699401000000000000020000000000020000114044826766478064826011460117369010000000000000001100000000033336046540900466994=22125211813633300007097747700833004014CBSK                          Khartoum North                000736Central Trade Company CTC     4                             Sudan                         00120200114BSDN      CBSK                         00000000000000001 938938CBSKBSDN      1600111300291900010000000000000000000000000000006100000000000000001                                            012IF=D400TC=2</message>
+	<message name="UcbAtmBalanceInquiryMsg">A4M090000200F638469128B0A00800000000044000A016604654090042009003000000000000000000000000000000113224822706251010014011460119010000000000000001100000000033336046540900420090=211252110015005000070976718909UCBAHF015BOK ALWAHA KAFURY 2 - TT      KHARTOUM                      000736                                                                                          00120200114BSDN      BAKH                         00000000000000001 938938CBSKBSDN      1600111300291900010000000000000000000000000000006100000000000000001                                            015ET=001401123206</message>
+	<message name="UcbPosPurchaseMsg">A4M090000200F638669128B0A00800000000044000A016604654090054657111000000000000005000000000005000114060332780801080332011460117369010000000000000001100000000033336046540900546571=21125211939905300007097857220833000220Export Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         00000000000000001 938938CBSKBSDN      1600111300291900010000000000000000000000000000006100000000000000001                                            004TC=2</message>
+	<message name="UcbAtmFundTransferWithchargesMsg">A4M090000200F638669128B0A00800000000064000A016604654090054657104000000000000000000000000005000114060332780801080332011460117369010000000000002001100000000033336046540900546571=211252119399053000070978580109UCBAHF015Export Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         00000000000000001 938938CBSKBSDN      1600111300291900011600113951500000010000000000000000000000000000006100000000000000001                                            004TC=2</message>
+	<message name="UcbAtmCardlessTransferMsg">A4M090000200F638669128B0A00800000000044000A016604654090054657106000000000000000000000000005000114060332780801080332011460117369010000000000000001100000000033336046540900546571=211252119399053000070978573909UCBAHF015Export Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         00000000000000001 938938CBSKBSDN      1600111300291900010000000000000000000000000000006100000000000000001                                            004TC=2</message>
+	<message name="UcbAtmP2PDebitTransferMsg">A4M090000200F638669128B0A00800000000044000A016604654090054657106300000000000000000000000005000114060332780801080332011460117369010000000000000001100000000033336046540900546571=211252119399053000070978574609UCBAHF015Export Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         00000000000000001 938938CBSKBSDN      1600111300291900010000000000000000000000000000006100000000000000001                                            004TC=2</message>
+	<message name="UcbAtmP2PCreditTransferMsg">A4M090000200F638669128B0A00800000000044000A016604654090054657106400000000000000000000000005000114060332780801080332011460117369010000000000000001100000000033336046540900546571=211252119399053000070978576109UCBAHF015Export Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         00000000000000001 938938CBSKBSDN      1600111300291900010000000000000000000000000000006100000000000000001                                            004TC=2</message>
+	<message name="UcbAtmPaymentMsg">A4M090000200F638669128B0A00800000000064000A016604654090054657105000000000000000000000000005000114060332780801080332011460117369010000000000000001100000000033336046540900546571=211252119399053000070978576909UCBAHF015Export Development Bank       Omdurman                      000736AHFAD UNIVERSITY              003                           Sudsn                         00120200114BSDN      EXPD                         00000000000000001 938938CBSKBSDN      16001113002919000102350000000000000000000000000000006100000000000000001                                            004TC=2</message>
+	
+</messages>

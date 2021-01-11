@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<clients>
+		<client name="summit" enabled="false">
+			<!-- Connector properties -->
+			<ip>192.168.21.156</ip>
+			<port>6508</port>
+			<connectorType>TS</connectorType>
+
+			<!-- factory properties -->
+			<protocolIdentification></protocolIdentification>
+			<lengthField>2</lengthField>
+			<header></header>
+			<bitmapType>16</bitmapType>
+			<lengthType>256</lengthType>
+			<includeLength>1</includeLength>
+			<posInHeader>0</posInHeader>
+			<skipBitmap>0</skipBitmap>
+			<isoPresent>0</isoPresent>
+		</client>
+		<client name="ucb" enabled="true">
+			<!-- Connector properties -->
+			<ip>192.168.21.156</ip>
+			<port>6508</port>
+			<connectorType>TS</connectorType>
+
+			<!-- factory properties -->
+			<protocolIdentification></protocolIdentification>
+			<lengthField>2</lengthField>
+			<header>A4M09000</header>
+			<bitmapType>16</bitmapType>
+			<lengthType>256</lengthType>
+			<includeLength>0</includeLength>
+			<posInHeader>0</posInHeader>
+			<skipBitmap>0</skipBitmap>
+			<isoPresent>0</isoPresent>
+		</client>
+	</clients>
+</configuration>
